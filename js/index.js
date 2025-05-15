@@ -196,7 +196,6 @@ async function getRepositoriesFromStorage() {
 async function getProjectsFromGithub() {
     const githubAccess = {
         headers:{
-            'Authorization': 'Bearer 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', 
             'X-GitHub-Api-Version': '2022-11-28'
         },
         myRepositoriesUrl: 'https://api.github.com/users/kledsonzg/repos'
