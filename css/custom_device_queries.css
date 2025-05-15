@@ -1,0 +1,234 @@
+/* CSS Document */
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 767px) {
+    header{
+        width: 100%;
+        height: 60px;
+        display: flex;
+        justify-content: space-around;
+        & nav.page-nav{
+            display: none;
+            &.active{
+                position: fixed;
+                height: 100vh;
+                width: 50vw;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                right: 0;
+                background-color: #0f0f0f;
+                top: 60px;
+                border-left: 2px solid #008170;
+                padding: 0;
+                & a{
+                    width: 100%;
+                    font-size: 1.2em;
+                    border-bottom: #008170 3px solid;
+                    margin: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+        & .btn-open-nav{
+            display: flex;
+        }
+        & h1, & .header-page-link a{
+            margin-block: 0;
+            font-size: 1em;
+        }
+        & .header-page-link{
+            width: unset;
+        }
+        & > *{
+            flex: 1;
+        }
+        /* MENU LATERAL */
+        & div.auto-extend{
+            display: flex;
+        }
+        &:has(nav.page-nav.active){
+            & .btn-open-nav{
+                color: #4CCD99;
+            }
+        }
+    }
+    main{
+        margin-top: 80px;
+        align-items: center;
+    }
+    section#start{
+        width: 90%;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 0;
+        & > *{
+            margin: 0;
+        }
+        & .me{
+            margin: 0;
+        }
+        & .welcome{
+            width: 100%;
+            animation: none;
+            background-image: linear-gradient(to bottom, #005B41, #005B41, transparent);
+            margin-top: 60px;
+        }
+    }
+    section#projects{
+        & .projects-container{
+            flex-direction: column;
+            align-items: center;
+            & .project-card{
+                margin: 0;
+                margin-top: 5px;
+                width: 80%;
+                & .btn-toggle-more-options-view{
+                    display: block;
+                    border: #012b1f 2px solid;
+                    border-radius: 5px;
+                    background-color: transparent;
+                    padding: 10px;
+                    margin: 3px;
+                    color: white;
+                }
+                &:not(:has(.card-description.enabled)):not(.selected):hover {
+                    & .card-info{
+                        display: none;
+                    }
+                }
+                &.selected{
+                    & .btn-close{
+                        display: block;
+                    }
+                    & .card-info{
+                        display: flex;
+                        & .more-options{
+                            & .option{
+                                & img, svg{
+                                    width: 28px; height: 24px;
+                                }
+                            }
+                        }
+                    }
+                    &:has(.card-description.enabled){
+                        & .card-info{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    section#certificates {
+        width: 90%;
+        & .main-certificates-container{
+            flex-direction: column-reverse;
+            align-items: center;
+            width: 95%;
+            max-height: unset;
+            & > *{
+                width: 95%;
+            }
+            & .list{
+                width: 97%;
+                flex-direction: row;
+                height: unset;
+                margin-top: 5px;
+                & .wrapper{
+                    overflow-y: hidden;
+                    overflow-x: visible;
+                    display: flex;
+                    user-select: none;
+                    & li{
+                        min-width: 100px;
+                        height: 100%; width: 100px;
+                        margin: 0;
+                        border: none;
+                        align-items: normal;
+                        & span{
+                            display: block;
+                        }
+                        & img{
+                            display: none;
+                        }
+                        &:not(:last-child){
+                            border-right: solid #909090 2px;
+                        }
+                        & .li-certificate-info{
+                            width: 100%;
+                            justify-self: auto;
+                            & .li-header{
+                                font-size: 0.6em;
+                                flex-direction: column;
+                            }
+                            & span.name{
+                                font-size: 0.48em;
+                                text-transform: capitalize;
+                            }
+                        }
+                        &.selected{
+                            background-color: #012b1f;
+                            & span.name{
+                                color: #008170;
+                            }
+                        }
+                    }
+                }
+            }
+            & .certificate-visualizer-container{
+                width: 95%;
+                font-size: 1em;
+                & > img{
+                    width: 90%;
+                }
+                & table.certificate-info{
+                    width: 97%;
+                    & th{
+                        font-size: 0.7em;
+                    }
+                    & td{
+                        font-size: 0.6em;
+                    }
+                }
+            }
+        }
+    }
+    section#contact{
+        width: 80%;
+    }
+    div.image-viewer-container{
+        top: 60px;
+        height: calc(100vh - 60px);
+        & .centerered-image-container{
+            & img{
+                width: 80%; height: auto;
+            }
+        }
+    }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    section#certificates {
+        & .main-certificates-container{
+            & .list{
+                & .wrapper{
+                    & li{
+                        & .li-certificate-info{
+                            & .li-header{
+                                font-size: 0.6em;
+                                flex-direction: column;
+                            }
+                            & span.name{
+                                font-size: 0.48em;
+                                text-transform: capitalize;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

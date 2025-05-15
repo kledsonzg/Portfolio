@@ -1,0 +1,12 @@
+[
+    {
+        "name": "KledsonZG Downloader",
+        "homepage": "https://kzgdownloader.kledsonzg.com.br",
+        "html_url": "",
+        "contents_url": "",
+        "imagesJsonUrl": "/custom/spoilers/kzgdownloader.json",
+        "fork": false,
+        "languages": ["JAVASCRIPT","C#","HTML","CSS"],
+        "description": "KledsonZG Downloader é uma aplicação web onde os usuários podem baixar vídeos de plataformas como 'Facebook', 'LinkedIn', 'Instagram, 'Threads' e futuramente outras plataformas! Basta o usuário inserir o URL do vídeo e solicitar o download!"
+    }
+]

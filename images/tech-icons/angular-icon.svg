@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="30.26792mm"
+   height="32.511703mm"
+   viewBox="0 0 30.26792 32.511703"
+   version="1.1"
+   id="svg1"
+   xml:space="preserve"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm" /><defs
+     id="defs1" /><style
+     type="text/css"
+     id="style1">.st0{fill:#F05133;}</style><style
+     type="text/css"
+     id="style1-7">.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#DD0031;} .st1{fill-rule:evenodd;clip-rule:evenodd;fill:#C3002F;} .st2{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}</style><style
+     type="text/css"
+     id="style1-73">.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#DD0031;} .st1{fill-rule:evenodd;clip-rule:evenodd;fill:#C3002F;} .st2{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}</style><g
+     id="g2-1"
+     transform="matrix(0.26458333,0,0,0.26458333,-16.91985,30.222703)"
+     inkscape:export-filename="angular-icon.svg"
+     inkscape:export-xdpi="25.001024"
+     inkscape:export-ydpi="25.001024"><g
+       id="g4"><path
+         id="polygon1"
+         class="st0"
+         d="m 121.14824,-114.22754 -57.199219,20.398442 8.718749,75.63086 48.48047,26.8496064 48.48047,-26.8496064 8.71875,-75.63086 z m 0,13.57813 35.63086,80.181641 h -13.33008 l -7.1914,-17.941407 h -30.34961 l -7.18946,17.941407 H 85.38847 Z m 0,26.050781 -10.43945,25.130859 h 20.88867 z"
+         style="fill:#ffffff" /><path
+         id="polygon2"
+         class="st1"
+         d="m 121.14824,-114.22754 v 13.57813 l 35.63086,80.181641 h -13.33008 l -7.19141,-17.941407 H 121.14824 V 8.6513684 l 48.48047,-26.8496064 8.71875,-75.63086 z m 0,75.818364 v -11.058594 -25.130859 -25.990231 -0.0606 z m 0,-11.058594 h 10.44922 z"
+         style="fill:#f2f2f2"
+         sodipodi:nodetypes="ccccccccccccccccccc" /></g></g></svg>

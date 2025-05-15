@@ -1,0 +1,263 @@
+[
+    {
+        "company": "Dio",
+        "emissionDate": "04/12/2023",
+        "learningTime": "1 hora",
+        "name": "Trabalhando Com Estruturas Condicionais (if, else if, else)",
+        "id": "107DC66B",
+        "imagePath":"/images/certificados/{id}-1.png",
+        "credential": "https://www.dio.me/certificate/{id}/share"
+    },
+    {
+        "company": "Dio",
+        "emissionDate": "06/12/2023",
+        "learningTime": "6 horas",
+        "name": "Trabalhando com Funções",
+        "id": "1C1F2059",
+        "imagePath":"/images/certificados/{id}-1.png",
+        "credential": "https://www.dio.me/certificate/{id}/share"
+    },
+    {
+        "company": "Dio",
+        "emissionDate": "07/12/2023",
+        "learningTime": "1 hora",
+        "name": "Estrutura de Dados JSON",
+        "id": "2DDDF9B4",
+        "imagePath":"/images/certificados/{id}-1.png",
+        "credential": "https://www.dio.me/certificate/{id}/share"
+    },
+    {
+        "company": "Dio",
+        "emissionDate": "05/12/2023",
+        "learningTime": "1 hora",
+        "name": "Introdução ao Mundo de Funções",
+        "id": "4DB74473",
+        "imagePath":"/images/certificados/{id}-1.png",
+        "credential": "https://www.dio.me/certificate/{id}/share"
+    },
+    {
+        "company": "Dio",
+        "emissionDate": "06/12/2023",
+        "learningTime": "1 hora",
+        "name": "Desafio de Código: Aperfeiçoe Sua Lógica e Pensamento Computacional",
+        "id": "9D01DB11",
+        "imagePath":"/images/certificados/{id}-1.png",
+        "credential": "https://www.dio.me/certificate/{id}/share"
+    },
+    {
+        "company": "Dio",
+        "emissionDate": "08/12/2023",
+        "learningTime": "68 horas",
+        "name": "Potência Tech iFood - Programação do Zero",
+        "id": "55B0C365",
+        "imagePath":"/images/certificados/{id}-1.png",
+        "credential": "https://www.dio.me/certificate/{id}/share"
+    },
+    {
+        "company": "Dio",
+        "emissionDate": "06/12/2023",
+        "learningTime": "1 hora",
+        "name": "Introdução Ao Mundo Dos Objetos",
+        "id": "68CA109D",
+        "imagePath":"/images/certificados/{id}-1.png",
+        "credential": "https://www.dio.me/certificate/{id}/share"
+    },
+    {
+        "company": "Dio",
+        "emissionDate": "05/12/2023",
+        "learningTime": "6 horas",
+        "name": "Dominando Estruturas de Controle",
+        "id": "96B6ED23",
+        "imagePath":"/images/certificados/{id}-1.png",
+        "credential": "https://www.dio.me/certificate/{id}/share"
+    },
+    {
+        "company": "Dio",
+        "emissionDate": "08/12/2023",
+        "learningTime": "1 hora",
+        "name": "Escrevendo as Classes de Um Jogo",
+        "id": "218A7352",
+        "imagePath":"/images/certificados/{id}-1.png",
+        "credential": "https://www.dio.me/certificate/{id}/share"
+    },
+    {
+        "company": "Dio",
+        "emissionDate": "05/12/2023",
+        "learningTime": "1 hora",
+        "name": "O Que São Funções e Como Criar",
+        "id": "7137FB23",
+        "imagePath":"/images/certificados/{id}-1.png",
+        "credential": "https://www.dio.me/certificate/{id}/share"
+    },
+    {
+        "company": "Dio",
+        "emissionDate": "08/12/2023",
+        "learningTime": "1 hora",
+        "name": "Parabéns Por Dominar as Estruturas de Dados",
+        "id": "89276C14",
+        "imagePath":"/images/certificados/{id}-1.png",
+        "credential": "https://www.dio.me/certificate/{id}/share"
+    },
+    {
+        "company": "Dio",
+        "emissionDate": "06/12/2023",
+        "learningTime": "1 hora",
+        "name": "Calculadora de Partidas Rankeadas",
+        "id": "A327B300",
+        "imagePath":"/images/certificados/{id}-1.png",
+        "credential": "https://www.dio.me/certificate/{id}/share"
+    },
+    {
+        "company": "Dio",
+        "emissionDate": "06/12/2023",
+        "learningTime": "1 hora",
+        "name": "Parabéns Por Dominar Funções",
+        "id": "BFD7B6D7",
+        "imagePath":"/images/certificados/{id}-1.png",
+        "credential": "https://www.dio.me/certificate/{id}/share"
+    },
+    {
+        "company": "Dio",
+        "emissionDate": "05/12/2023",
+        "learningTime": "1 hora",
+        "name": "Parabéns Por Dominar as Estruturas de Controle",
+        "id": "C0DB20C5",
+        "imagePath":"/images/certificados/{id}-1.png",
+        "credential": "https://www.dio.me/certificate/{id}/share"
+    },
+    {
+        "company": "Dio",
+        "emissionDate": "04/12/2023",
+        "learningTime": "1 hora",
+        "name": "Trabalhando Com Estruturas de Decisão (Estrutura Switch Case)",
+        "id": "C5995DC5",
+        "imagePath":"/images/certificados/{id}-1.png",
+        "credential": "https://www.dio.me/certificate/{id}/share"
+    },
+    {
+        "company": "Dio",
+        "emissionDate": "05/12/2023",
+        "learningTime": "1 hora",
+        "name": "Funções com Retorno",
+        "id": "D1BA9412",
+        "imagePath":"/images/certificados/{id}-1.png",
+        "credential": "https://www.dio.me/certificate/{id}/share"
+    },
+    {
+        "company": "Dio",
+        "emissionDate": "04/12/2023",
+        "learningTime": "1 hora",
+        "name": "Parabéns Por Dominar Os Operadores",
+        "id": "DA3CB63E",
+        "imagePath":"/images/certificados/{id}-1.png",
+        "credential": "https://www.dio.me/certificate/{id}/share"
+    },
+    {
+        "company": "Dio",
+        "emissionDate": "08/12/2023",
+        "learningTime": "1 hora",
+        "name": "O Que São Classes e Objetos",
+        "id": "DDC69EA8",
+        "imagePath":"/images/certificados/{id}-1.png",
+        "credential": "https://www.dio.me/certificate/{id}/share"
+    },
+    {
+        "company": "Dio",
+        "emissionDate": "05/12/2023",
+        "learningTime": "1 hora",
+        "name": "Funções com Parâmetros",
+        "id": "E21F886A",
+        "imagePath":"/images/certificados/{id}-1.png",
+        "credential": "https://www.dio.me/certificate/{id}/share"
+    },
+    {
+        "company": "Dio",
+        "emissionDate": "04/12/2023",
+        "learningTime": "1 hora",
+        "name": "Introdução as Estruturas de Controle",
+        "id": "F0DE0E64",
+        "imagePath":"/images/certificados/{id}-1.png",
+        "credential": "https://www.dio.me/certificate/{id}/share"
+    },
+    {
+        "company": "Dio",
+        "emissionDate": "04/12/2023",
+        "learningTime": "1 hora",
+        "name": "Trabalhando Com Estruturas de Repetição (for, while, do-while)",
+        "id": "F7C380C5",
+        "imagePath":"/images/certificados/{id}-1.png",
+        "credential": "https://www.dio.me/certificate/{id}/share"
+    },
+    {
+        "company": "Fundação Bradesco",
+        "emissionDate": "06/06/2023",
+        "learningTime": "2 horas",
+        "name": "CRIE UM SITE SIMPLES USANDO HTML, CSS E JAVASCRIPT",
+        "id": "9ADD1759-FF68-4C29-A0DF-51A26861C02A",
+        "imagePath":"images\\certificados\\Crie um site simples usando HTML, CSS e JavaScript-1.png",
+        "credential": "https://lms.ev.org.br/mpls/Web/Lms/Student/PrintCertificateDownload.ashx?uid=9385203&p=cHnlV8PlwBPe9ovOF6ZWtBlKKRaByaId"
+    },
+    {
+        "company": "Fundação Bradesco",
+        "emissionDate": "11/06/2023",
+        "learningTime": "11 horas",
+        "name": "HTML - BÁSICO",
+        "id": "265D6EC6-C707-4BBE-9905-4EBE881FA70F",
+        "imagePath":"images\\certificados\\HTML - BÁSICO-1.png",
+        "credential": "https://lms.ev.org.br/mpls/Web/Lms/Student/PrintCertificateDownload.ashx?uid=9385203&p=cHnlV8PlwBOEMvL07t9n48imPMpj8Xdw"
+    },
+    {
+        "company": "Fundação Bradesco",
+        "emissionDate": "13/06/2023",
+        "learningTime": "6 horas",
+        "name": "HTML - AVANÇADO",
+        "id": "65AA6A94-BECE-466F-9F07-3E054A4A6E09",
+        "imagePath":"images\\certificados\\HTML - AVANÇADO-1.png",
+        "credential": "https://lms.ev.org.br/mpls/Web/Lms/Student/PrintCertificateDownload.ashx?uid=9385203&p=cHnlV8PlwBMKUJJeYPwX0wAUsyQVNk6c"
+    },
+    {
+        "company": "Fundação Bradesco",
+        "emissionDate": "31/07/2023",
+        "learningTime": "26 horas",
+        "name": "INOVANDO COM CSS",
+        "id": "904E6733-7914-4E3C-9861-D2776B483883",
+        "imagePath":"images\\certificados\\Inovando com CSS-1.png",
+        "credential": "https://lms.ev.org.br/mpls/Web/Lms/Student/PrintCertificateDownload.ashx?uid=9385203&p=cHnlV8PlwBNbyPzRWn63qbQw0tHEWR0b"
+    },
+    {
+        "company": "Fundação Bradesco",
+        "emissionDate": "03/08/2023",
+        "learningTime": "26 horas",
+        "name": "INTRODUÇÃO AO JAVASCRIPT",
+        "id": "9216BDAF-5C97-42C8-99C4-C0AFD716A85A",
+        "imagePath":"images\\certificados\\Introdução ao Javascript-1.png",
+        "credential": "https://lms.ev.org.br/mpls/Web/Lms/Student/PrintCertificateDownload.ashx?uid=9385203&p=cHnlV8PlwBMI69b%252frNjQOHoLjEV4Dq7o"
+    },
+    {
+        "company": "Fundação Bradesco",
+        "emissionDate": "04/08/2023",
+        "learningTime": "5 horas",
+        "name": "LINGUAGEM DE PROGRAMAÇÃO JAVA - BÁSICO",
+        "id": "A8F48A02-45BB-456F-A49E-273ED17C4260",
+        "imagePath":"images\\certificados\\Linguagem de Programação Java - Básico-1.png",
+        "credential": "https://lms.ev.org.br/mpls/Web/Lms/Student/PrintCertificateDownload.ashx?uid=9385203&p=cHnlV8PlwBPdxKB8F1ZujzAVt1uCvoI0e"
+    },
+    {
+        "company": "Fundação Bradesco",
+        "emissionDate": "06/08/2023",
+        "learningTime": "16 horas",
+        "name": "LINGUAGEM DE PROGRAMAÇÃO JAVA - AVANÇADO",
+        "id": "8D14EE0A-58C1-4AC2-9EE3-6E4128CAD7AB",
+        "imagePath":"images\\certificados\\Linguagem de Programação Java - Avançado-1.png",
+        "credential": "https://lms.ev.org.br/mpls/Web/Lms/Student/PrintCertificateDownload.ashx?uid=9385203&p=cHnlV8PlwBNS%252fet5coKw7Nhd8GXVeax8"
+    },
+    {
+        "company": "Udemy",
+        "emissionDate": "31/08/2021",
+        "learningTime": "8 horas",
+        "name": "Aprenda a criar jogos com a UNITY na prática",
+        "id": "UC-b4b199c5-a53f-4c46-9874-3d56e1d496b5",
+        "imagePath":"images\\certificados\\UC-b4b199c5-a53f-4c46-9874-3d56e1d496b5-1.png",
+        "credential": "https://ude.my/{id}"
+    }
+]
