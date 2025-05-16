@@ -5,19 +5,21 @@ var languageImages = Array.from(document.querySelectorAll('.badge img')).map(ele
         source: element.src
     }
 })
-//console.log(languageImages);
 
 document.addEventListener('DOMContentLoaded', async () => {
     const promises = [getProjectsFromGithub(), getCustomRepositories() ];
+    getCertificates().then(() => {
+        document.querySelector('.certificates-loading-container').setAttribute('disabled', '');
+        document.querySelector('#certificates .list li:not(.model)').click();
+    }).catch(error => {
+        console.error('Ocorreu um erro durante o processo de obter os certificados. ', error);
+    });;
     for(const promise of promises){
         await promise.catch(error => {
-            console.log('Ocorreu um erro ao se conectar com a API do GITHUB. ', error);
+            console.error('Ocorreu um erro ao se conectar com a API do GITHUB. ', error);
         });
     }
     document.querySelector('.github-loading-container').setAttribute('disabled', '');
-
-    await getCertificates();
-    document.querySelector('#certificates .list li:not(.model)').click();
 } );
 document.addEventListener('scroll', () => {
     document.documentElement.dataset.scroll = window.scrollY;
@@ -131,11 +133,9 @@ function toggleProjectFiltersListVisibility(){
     const menuElement = document.querySelector('#projects .filter-container menu');
     const menuListElement = menuElement.querySelector('ul');
     const validElementsToHandle = [menuElement].concat(Array.from(menuListElement.querySelectorAll('li') ) )
-    //console.log('is element valid to handle:', lastClickedElement, validElementsToHandle.includes(lastClickedElement) );
     
     if(validElementsToHandle.includes(lastClickedElement) ){
         if(lastClickedElement === menuElement){
-            //console.log('click from menu', lastClickedElement);
             const isMenuVisible = menuListElement.classList.contains('visible-flex');
             menuListElement.classList.toggle('visible-flex', !isMenuVisible);
         }
@@ -167,7 +167,7 @@ function deleteProjectCards(){
 async function getCustomRepositories(){
     await fetch('/custom/private_repositories.json').then(async (response) => {
         const privateRepositories = await response.json().catch(error => {
-            console.log('Erro ao obter os repositórios/projetos privados.', error);
+            console.error('Erro ao obter os repositórios/projetos privados.', error);
         });
 
         setProjectInformations(privateRepositories, null, true);
@@ -177,7 +177,7 @@ async function getCustomRepositories(){
 async function getRepositoriesFromStorage() {
     let save = localStorage.getItem('kledsonzg-repositories');
     if(!save){
-        console.log('Erro ao obter os repositórios salvos localmente.');
+        console.error('Erro ao obter os repositórios salvos localmente.');
         return;
     }
 
@@ -208,7 +208,6 @@ async function getProjectsFromGithub() {
         }
         await response.json().then(async (data) => {
             const repositories = data.filter(filter => filter.topics.includes('view-from-my-portfolio') && !filter.fork);
-            console.log(repositories);
             const isOk = await setProjectInformations(repositories, githubAccess, false);
             if(isOk){
                 const save = {
@@ -234,7 +233,7 @@ async function getCertificates() {
     const container = document.querySelector('.main-certificates-container .list .wrapper');
     const model = container.querySelector('.model');
     const response = await fetch('/custom/certificados.json').catch(error => {
-        console.log('Houve um erro na requisição de certificados.', error);
+        console.error('Houve um erro na requisição de certificados.', error);
     });
     document.querySelector('.certificate-visualizer').onclick = () => {
         document.querySelector('.open-credential').click();
@@ -285,7 +284,7 @@ async function getCertificates() {
                 const reader = new FileReader();
                 reader.onloadend = () => {
                     if(reader.error){
-                        console.log('Houve um erro ao carregar a imagem ' + `${imagePath}.`, reader.error);
+                        console.error('Houve um erro ao carregar a imagem ' + `${imagePath}.`, reader.error);
                         return;
                     }
 
@@ -376,7 +375,7 @@ async function setProjectInformations(repositories, githubAccess, isFromLocalSto
                 langElements.forEach(element => {
                     const result = languageImages.find(filter => filter.lang === language);
                     if(!result){
-                        console.log('Falha ao obter imagem da linguagem:', language);
+                        console.error('Falha ao obter imagem da linguagem:', language);
                         return;
                     }
                     const img = document.createElement('img');
@@ -388,7 +387,7 @@ async function setProjectInformations(repositories, githubAccess, isFromLocalSto
             // SETAR A IMAGEM PRINCIPAL E SETAR O ATRIBUTO COM TODAS AS IMAGENS.
             await fetch(repository.imagesJsonUrl).then(async response => {
                 if(!response.ok){
-                    console.log(await response.text());
+                    console.error(await response.text());
                     cardClone.querySelector('.option.pictures').setAttribute('disabled', '');
                     return;
                 }
@@ -396,7 +395,7 @@ async function setProjectInformations(repositories, githubAccess, isFromLocalSto
                 cardClone.setAttribute('images', JSON.stringify(imagesJson) );
                 cardClone.querySelector('img').src = imagesJson[0];
             }).catch((error) => {
-                console.log(error);
+                console.error(error);
             });
         }
         else{
@@ -426,7 +425,7 @@ async function setProjectLanguage(projectElement, repository, requestHeaders){
     let isOk = false;
     await fetch(repository.languages_url, {method: 'get', headers: requestHeaders } ).then(async (response) => {
         if(!response.ok){
-            console.log(await response.text());
+            console.error(await response.text());
             return;
         }
         
@@ -438,7 +437,7 @@ async function setProjectLanguage(projectElement, repository, requestHeaders){
                 langElements.forEach(element => {
                     const result = languageImages.find(filter => filter.lang === language);
                     if(!result){
-                        console.log('Falha ao obter imagem da linguagem:', language);
+                        console.error('Falha ao obter imagem da linguagem:', language);
                         return;
                     }
                     const img = document.createElement('img');
@@ -450,7 +449,7 @@ async function setProjectLanguage(projectElement, repository, requestHeaders){
             isOk = true;
         } );
     } ).catch((error) => {
-        console.log(error);
+        console.error(error);
     });
     return isOk;
 }
@@ -462,7 +461,7 @@ async function setProjectSpoilerImages(jsonUrl, projectElement, repository, requ
         let setProjectImages = async (projectElement, imagesJsonUrl) => {
             await fetch(imagesJsonUrl).then(async _response => {
                 if(!_response.ok){
-                    console.log(await _response.text());
+                    console.error(await _response.text());
                     return;
                 }
                 let imagesJson = await _response.json();
@@ -470,7 +469,7 @@ async function setProjectSpoilerImages(jsonUrl, projectElement, repository, requ
                 projectElement.querySelector('img').src = imagesJson[0];
                 isOk = true;
             }).catch((error) => {
-                console.log(error);
+                console.error(error);
             })
         }
 
