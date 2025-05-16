@@ -655,6 +655,7 @@ html[touch-device=""]{
 }
 
 section#certificates{
+    position: relative;
     background-color: #0F0F0F;
     border: #005B41 solid 2px;
     border-radius: 15px;
@@ -664,6 +665,33 @@ section#certificates{
     display: flex;
     flex-direction: column;
     align-items: center;
+    & .certificates-loading-container{
+        position: absolute;
+        user-select: none;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        display: flex;
+        border-radius: 10px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: #000000e1;
+        z-index: 10;
+        &[disabled], &[disabled=""]{
+            display: none;
+        }
+        & img{
+            width: 128px;
+        }
+        & span.loading-msg::before{
+            content: 'POR FAVOR, AGUARDE';
+        }
+        & span.loading-msg::after{
+            animation: infinite loading-dots-anim 1.2s;
+            content: '';
+            font-size: 2rem;
+        }
+    }
     & h2 {
         position: relative;
         display: flex;
