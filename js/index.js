@@ -186,7 +186,7 @@ async function getRepositoriesFromStorage() {
     
     const lastUpdate = ' ' + getDateString(new Date(save.time * 1000) );
     const span = document.querySelector('#projects .last-update-container span');
-    span.innerText = span.innerText + lastUpdate;
+    span.innerText = span.innerText + lastUpdate + ' (cache)';
     span.parentElement.setAttribute('enabled', '');
 
     deleteProjectCards();
@@ -417,7 +417,6 @@ async function setProjectInformations(repositories, githubAccess, isFromLocalSto
 
         if(location.origin === applicationUrl){
             const cards = Array.from(container.children);
-            cardClone.style.borderColor = 'gold';
             cards.unshift(cardClone);
             cards.forEach(card => container.appendChild(card) );
             continue;
