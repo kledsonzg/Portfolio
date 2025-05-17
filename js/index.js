@@ -415,6 +415,14 @@ async function setProjectInformations(repositories, githubAccess, isFromLocalSto
         }
         catch{}
 
+        if(location.hostname === applicationUrl){
+            const cards = Array.from(container.children);
+            cardClone.style.borderColor = 'gold';
+            cards.unshift(cardClone);
+            cards.forEach(card => container.appendChild(card) );
+            continue;
+        }
+
         container.appendChild(cardClone);
     }
     card.classList.toggle('hidden', true);
