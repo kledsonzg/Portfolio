@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Portif&oacute;lio - Kledson Dias Santos</title>
+        <title>Portf&oacute;lio - Kledson Dias Santos</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Portfolio direto ao ponto! Tecnologias que j&aacute; usei e uso; Meus projetos; Meus certificados; Meios de contato.">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +17,7 @@
             <div class="header-page-link kanit-light">
                 <a href="/">KledsonZG</a>
             </div>
-            <h1 class="header-page-title">Meu Portif&oacute;lio</h1>
+            <h1 class="header-page-title">Meu Portf&oacute;lio</h1>
             <nav class="page-nav kanit-light">
                 <a href="#">In&iacute;cio</a>
                 <a href="#about">Sobre mim</a>
@@ -340,23 +342,23 @@
         </main>
         <script>
             function openUrl(link){
-                let a = document.createElement('a');
+                const a = document.createElement('a');
                 a.href = link;
                 a.target = '_blank';
                 a.click();
             }
             function alterarContagemDeCaracteres(input, element, message){
-                let text = input.value;
-                let maxLength = parseInt(input.maxLength);
+                const text = input.value;
+                const maxLength = parseInt(input.maxLength);
                 if(isNaN(maxLength) )
                     return;
 
                 element.innerText = `${message}(${input.value.length}/${maxLength} caracteres):`;
             }
             function numeroTelefoneAlterado(element){
-                let lastNumbers = element.getAttribute('changedphone');
-                let valueAsArray = Array.from(element.value);
-                let numbers = valueAsArray.filter(filter => filter.toString().match('[0-9]') );     
+                const lastNumbers = element.getAttribute('changedphone');
+                const valueAsArray = Array.from(element.value);
+                const numbers = valueAsArray.filter(filter => filter.toString().match('[0-9]') );     
                 
                 if(numbers.length <= lastNumbers.length){
                     element.value = numbers.join('');
@@ -367,10 +369,9 @@
                 formatarNumeroDeTelefone(element);
             }
             function formatarNumeroDeTelefone(element){
-                let valueAsArray = Array.from(element.value);
+                const valueAsArray = Array.from(element.value);
+                const isCellPhoneNumber = document.querySelector('.number-type-cellphone input').checked; 
                 let numbers = valueAsArray.filter(filter => filter.toString().match('[0-9]') );
-                let isCellPhoneNumber = document.querySelector('.number-type-cellphone input').checked; 
-
                 if(numbers.length === 3 && numbers[2] !== '9' && isCellPhoneNumber){
                     numbers[3] = numbers[2];
                     numbers[2] = '9';
