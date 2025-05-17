@@ -876,6 +876,7 @@ section#contact{
     & label{
         font-size: 1.2rem;
         padding-top: 5px;
+        color: white;
     }
     & textarea{
         max-width: 100%;
@@ -883,6 +884,8 @@ section#contact{
     & input, & textarea{
         font-size: 1.3rem;
         padding: 5px;
+        background-color: #d3d3d3;
+        border: 2px solid white;
     }
     & input:focus, textarea:focus{
         outline: none;
