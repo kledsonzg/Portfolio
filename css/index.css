@@ -153,6 +153,41 @@ header{
 html:not([data-scroll="0"] ) body header{
     background-color: #0f0f0fe3;
 }
+html[touch-device=""]{
+    #projects{
+        & .projects-container {
+            & .project-card{
+                & .btn-toggle-more-options-view{
+                    display: block;
+                    border: #012b1f 2px solid;
+                    border-radius: 5px;
+                    background-color: transparent;
+                    padding: 10px;
+                    margin: 3px;
+                    color: white;
+                }
+                &:not(:has(.card-description.enabled)):not(.selected):hover {
+                    & .card-info{
+                        display: none;
+                    }
+                }
+                &.selected{
+                    & .btn-close{
+                        display: block;
+                    }
+                    & .card-info{
+                        display: flex;
+                    }
+                    &:has(.card-description.enabled){
+                        & .card-info{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    } 
+}
 
 main{
     position: relative;
@@ -617,41 +652,6 @@ section#start{
             display: unset;
         }
     }
-}
-html[touch-device=""]{
-    #projects{
-        & .projects-container {
-            & .project-card{
-                & .btn-toggle-more-options-view{
-                    display: block;
-                    border: #012b1f 2px solid;
-                    border-radius: 5px;
-                    background-color: transparent;
-                    padding: 10px;
-                    margin: 3px;
-                    color: white;
-                }
-                &:not(:has(.card-description.enabled)):not(.selected):hover {
-                    & .card-info{
-                        display: none;
-                    }
-                }
-                &.selected{
-                    & .btn-close{
-                        display: block;
-                    }
-                    & .card-info{
-                        display: flex;
-                    }
-                    &:has(.card-description.enabled){
-                        & .card-info{
-                            display: none;
-                        }
-                    }
-                }
-            }
-        }
-    } 
 }
 
 section#certificates{
